@@ -1,0 +1,135 @@
+@import url("darkTheme.css");
+@import url("private.css");
+
+/* --- TAB AND TITLE BAR --- */
+
+#TabsToolbar {
+  display: none !important;
+  height: 0 !important;
+}
+
+.content-header {
+  background: var(--gg-bg) !important;
+}
+
+.content-scrollable {
+  background: var(--gg-black) !important;
+}
+
+/* --- SIDEBAR --- */
+
+#sidebar-header {
+  display: none !important;
+  border-bottom: none !important;
+  border: none !important;
+  background-color: var(--gg-bg) !important;
+  border-inline-color: var(--gg-bg);
+}
+
+#sidebar-box {
+  margin-top: -1px;
+  position: relative;
+}
+
+/* Support for languages that are read from right to left */
+#sidebar-box[positionend] {
+  direction: rtl;
+}
+
+#sidebar-box[positionend] > * {
+  direction: ltr;
+}
+
+#sidebar-box[positionend]:-moz-locale-dir(rtl) {
+  direction: ltr;
+}
+
+#sidebar-box[positionend]:-moz-locale-dir(rtl) > * {
+  direction: rtl;
+}
+
+.sidebar-panel {
+  background: var(--gg-bg) !important;
+}
+
+.sidebar-panel[lwt-sidebar] {
+  background: var(--gg-bg);
+}
+
+#sidebar-icon {
+  filter: contrast(150%);
+  opacity: 1;
+}
+
+.sidebar-placesTree {
+  position: relative;
+  border-top-right-radius: 6px;
+  background: var(--gg-black) !important;
+  color: var(--gg-fg-alt) !important;
+}
+
+/* Uncomment if you place your sidebar to the right */
+/* .sidebar-placesTree {
+	border-top-right-radius: 0;
+	border-top-left-radius: 6px;
+} */
+
+.sidebar-placesTree:before {
+  right: auto;
+  left: 0;
+}
+
+#sidebar-title {
+  font-size: 1.1rem;
+}
+
+#sidebar-close {
+  opacity: 0;
+}
+
+#sidebar-close:hover {
+  opacity: 1;
+}
+
+#historyTree .sidebar-placesTreechildren {
+  margin-left: -8px;
+}
+
+#sidebar-splitter {
+  margin-top: -1px;
+  width: 0px !important;
+  border: 2px solid var(--gg-bg) !important;
+}
+
+#sidebar,
+#sidebar-header {
+  border-inline-width: 0px 4px;
+}
+
+#sidebar-box:not([positionend]) > :-moz-locale-dir(rtl),
+#sidebar-box[positionend] > * {
+  border-inline-width: 4px 0px;
+}
+
+/* --- IMPROVEMENTS & FEATS --- */
+
+#appcontent {
+  margin-top: -1px;
+}
+
+/* Hide on fullscreen */
+#main-window[sizemode="fullscreen"] #sidebar-box,
+#main-window[sizemode="fullscreen"] #sidebar-splitter {
+  /* --- Match the transition from the toolbar; swap to margin-right if you use the sidebar to the right --- */
+  /* transition: .8s margin-left ease-out !important; */
+  display: none !important;
+}
+
+#search-box {
+  appearance: none !important;
+  border-radius: 5px !important;
+  line-height: 1.8rem !important;
+  background: var(--gg-black) !important;
+  color: var() !important;
+}
+

@@ -1,0 +1,9 @@
+@import url("darkTheme.css");
+
+:root[privatebrowsingmode="temporary"] {
+  --focus-outline-color: var(--gg-purple) !important;
+  --toolbar-field-focus-border-color: var(--gg-purple) !important;
+  --lwt-selected-tab-background-color: var(--gg-purple-dark) !important;
+  --avatar-image-url: url("chrome://global/skin/icons/indicator-private-browsing.svg") !important;
+}
+
