@@ -1,3 +1,5 @@
+# plasma conifig; split into multiple modules
+# and reload based on NixAYO
 { pkgs, ... }:
 {
   imports = [
@@ -8,8 +10,8 @@
 
     desktop.mouseActions.middleClick = "applicationLauncher";
 
-    workspace.wallpaper = "/home/igor/Pictures/Wallpapers/walls-catppuccin-mocha/isekai.jpg";
-    kscreenlocker.appearance.wallpaper = "/home/igor/Pictures/Wallpapers/walls-catppuccin-mocha/idk-tbh.png";
+    workspace.wallpaper = "/home/igor/.dotfiles/plasma/walls/cool.jpg";
+    kscreenlocker.appearance.wallpaper = "/home/igor/.dotfiles/plasma/walls/fox-clearing.png";
 
 
 

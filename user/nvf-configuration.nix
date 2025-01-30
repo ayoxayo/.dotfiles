@@ -1,3 +1,5 @@
+# nvf config module; add key mappings
+# default on
 { config, pkgs, ... }:
 
 {
@@ -23,7 +25,7 @@
         setupOpts = {
           add_blank_line_at_top = true;
         };
-};
+      };
 
       autocomplete.nvim-cmp.enable = true;
  

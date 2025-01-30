@@ -1,4 +1,5 @@
 # zsh config module
+#default on
 { config, pkgs, ... }:
 
 let
@@ -9,7 +10,6 @@ let
 	"...." = "cd ../../..";
 	"....." = "cd ../../../..";
 	"fucking" = "sudo";
-	":wq" = "exit";
 	"cdc" = "cd .dotfiles/";
 	"e" = "nvim";
 	"grep" = "grep --color=auto";

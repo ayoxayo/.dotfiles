@@ -1,3 +1,5 @@
+# first attempt at single GPU passthrough
+# certainly fucking OFF
 { config, lib, pkgs, ... }:
 
 let

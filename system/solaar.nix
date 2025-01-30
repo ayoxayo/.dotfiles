@@ -1,3 +1,5 @@
+# solaar config; figuree out how to add rules for mouse gestures
+# default on
 { config, pkgs, ... }:
 
 {

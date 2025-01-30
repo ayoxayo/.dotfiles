@@ -1,3 +1,5 @@
+# git config module
+#default on
 { config, pkgs, ... }:
 
 {

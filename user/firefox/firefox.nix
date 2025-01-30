@@ -1,7 +1,8 @@
+# firefox module
+# default on
 { config, pkgs, ... }:
 
 {
-
   programs.firefox = {
     enable = true;
 

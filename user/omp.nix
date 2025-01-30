@@ -1,3 +1,5 @@
+#oh my posh config module
+# default on
 { pkgs, config, ... }:
 
 {
