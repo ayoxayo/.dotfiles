@@ -2,25 +2,25 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
   imports =
     [ 
        ./hardware-configuration.nix
-      #/etc/nixos/hardware-configuration.nix
+      #/etc/nixos/hardware-configuration.nix #for bad times
       ./system/audio.nix
       ./system/coding.nix
-      ./system/extra-pkgs.nix
-      #./system/gaming.nix
-      #./system/graphics.nix
-      #./system/minecraft.nix
+      ./system/extra-pkgs.nix   #off
+      ./system/gaming.nix       #off 
+      ./system/graphics.nix     #off
+      ./system/minecraft.nix    #off 
       ./system/packages.nix
-      #./system/qemu.nix
+      ./system/qemu.nix         #off 
       ./system/sddm.nix
       #./system/singlegpupassthrough.nix
       ./system/solaar.nix
-      ./system/ssh.nix
+      ./system/ssh.nix          #off
       ./system/syncthing.nix
       ./system/users.nix
     ];
@@ -30,7 +30,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   
   # Networking & Bluetooth
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "NixAYO"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking

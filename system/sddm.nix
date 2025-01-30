@@ -1,4 +1,5 @@
-{ config, pkgs, lib, ... }:
+# sddm
+{ pkgs, lib, ... }:
 {
   services.displayManager.sddm = lib.mkForce {
     enable = true;

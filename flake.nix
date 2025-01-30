@@ -28,7 +28,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       nixosConfigurations = {
-        nixos = lib.nixosSystem {
+        NixAYO = lib.nixosSystem {
           inherit system;
           specialArgs = {inherit inputs;};
           modules = [

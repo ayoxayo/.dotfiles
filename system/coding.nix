@@ -1,3 +1,4 @@
+# packages for developing
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [

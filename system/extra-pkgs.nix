@@ -1,3 +1,4 @@
+# extra packages and thier config if necessary
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [

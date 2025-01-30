@@ -1,7 +1,5 @@
 # gaming module; add all gaming stuff
-#default off
-
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.steam = {

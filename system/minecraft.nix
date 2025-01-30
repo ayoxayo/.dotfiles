@@ -1,13 +1,5 @@
 # minecraft server module; fix modpack
-# default off
-{ pkgs, lib, inputs, ... }:
-
-#let
-#  serverModpack = (pkgs.fetchPackwizModpack {
-#    url = "https://raw.githubusercontent.com/ayoxayo/custom1/refs/heads/main/pack.toml";
-#    packHash = "sha256-14gg8crd1ykbiygcdp4160yc1si6i0ksmi9q0rzfgry999sygg1n";
-#  });
-#in
+{ pkgs, inputs, ... }:
 
 {
   imports = [ inputs.nix-minecraft.nixosModules.minecraft-servers ];

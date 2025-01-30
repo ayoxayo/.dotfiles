@@ -1,6 +1,5 @@
 # qemu config module
-# default off
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
 

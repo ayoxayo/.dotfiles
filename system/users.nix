@@ -1,5 +1,5 @@
 # Users module, don't forget to add a password with 'passwd'!
-{ config, pkgs, ... }:
+{ ... }:
 {
   users.users.igor = {
     isNormalUser = true;

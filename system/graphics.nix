@@ -1,6 +1,5 @@
 # nvidia drivers module
-#default off
-{ config, pkgs, ... }:
+{ config, ... }:
 {
   hardware.graphics = {
     enable = true;

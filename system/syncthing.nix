@@ -1,7 +1,5 @@
 # syncthing gui 
-# default on
-
-{ config, pkgs, ... }:
+{ ... }:
 {
   services.syncthing = {
     enable = true;

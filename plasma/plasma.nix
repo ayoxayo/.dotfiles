@@ -1,6 +1,6 @@
 # plasma conifig; split into multiple modules
 # and reload based on NixAYO
-{ pkgs, ... }:
+{ ... }:
 {
   imports = [
   ];
