@@ -1,7 +1,5 @@
 # git config module
-#default on
-{ config, pkgs, ... }:
-
+{ ... }:
 {
   programs.git = {
     enable = true;

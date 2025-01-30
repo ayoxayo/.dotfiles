@@ -1,10 +1,6 @@
 # fastfetch config module
-# default on
+{ ... }:
 {
-  config,
-  pkgs,
-  ...
-}: {
   programs.fastfetch = {
     enable = true;
     settings = {

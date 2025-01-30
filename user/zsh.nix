@@ -1,7 +1,5 @@
 # zsh config module
-#default on
-{ config, pkgs, ... }:
-
+{ config, ... }:
 let
   myAliases = {
 	"ls" = "eza -Alhs size --time-style='+%d-%m-%y %H:%M:%S' --group-directories-first";
@@ -19,7 +17,6 @@ let
 	"homiee" = "home-manager switch --flake .";
   };
 in
-
 {
   programs.zsh = {
     enable = true;

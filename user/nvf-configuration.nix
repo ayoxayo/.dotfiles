@@ -1,10 +1,6 @@
 # nvf config module; add key mappings
-# default on
-{ config, pkgs, ... }:
-
+{ ... }:
 {
-  #imports = [ inputs.nvf.homeManagerModules.default ];
-
   programs.nvf = {
     enable = true;
     settings.vim = {
@@ -44,4 +40,3 @@
     };
   };
 }
-
