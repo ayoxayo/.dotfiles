@@ -10,7 +10,7 @@
     };
     pulse.enable = true;
     jack.enable = true;
-    media-session.enable = true;
+    wireplumber.enable = true;
   };
 }
 
