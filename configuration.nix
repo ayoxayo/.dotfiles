@@ -7,7 +7,7 @@
 {
   imports =
     [ 
-       ./hardware-configuration.nix
+       ./system/hardware-configuration.nix
       #/etc/nixos/hardware-configuration.nix #for bad times
       ./system/audio.nix
       ./system/coding.nix
