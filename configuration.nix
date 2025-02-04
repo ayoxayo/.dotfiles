@@ -9,7 +9,7 @@
     [ 
        ./system/hardware-configuration.nix
       #/etc/nixos/hardware-configuration.nix #for bad times
-      ./system/ai.nix
+      #./system/ai.nix
       ./system/audio.nix
       ./system/coding.nix
       ./system/extra-pkgs.nix   #off

@@ -7,7 +7,6 @@
     tor-browser
     mullvad-browser
     mullvad-vpn
-    tutanota-desktop
     
     obs-studio
 

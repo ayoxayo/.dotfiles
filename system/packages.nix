@@ -11,6 +11,7 @@
     
     obsidian
     syncthingtray
+    tutanota-desktop
     signal-desktop
     bitwarden-desktop
     nerd-fonts.hack
