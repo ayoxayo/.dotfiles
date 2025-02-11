@@ -103,20 +103,20 @@
       install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
       installation_mode = "force_installed";
       };
-          # Bitwarden
-          "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
-           install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
-          installation_mode = "force_installed";
-        };
-          # Stylus
+           # Stylus
           "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}" = {
-          installation_mode = "force_installed";
-          install_url = "https://addons.mozilla.org/firefox/downloads/file/4338993/styl_us-1.5.51.xpi";
+            installation_mode = "force_installed";
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4338993/styl_us-1.5.51.xpi";
+          };
+          # Renewed Tab - New Tab
+          "{166411f2-402a-4bca-a3da-38b795ec8007}" = {
+            installation_mode = "force_installed";
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4300211/renewed_tab-1.19.0.xpi";
           };
           # Firefox Color
           "FirefoxColor@mozilla.com" = {
-          installation_mode = "force_installed";
-          install_url = "https://addons.mozilla.org/firefox/downloads/file/3643624/firefox_color-2.1.7.xpi";
+            installation_mode = "force_installed";
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/3643624/firefox_color-2.1.7.xpi";
           };
           # Youtube Enhancer
           "enhancerforyoutube@maximerf.addons.mozilla.org" = {
@@ -149,10 +149,10 @@
             installation_mode = "force_installed";
           };
           # Tabliss
-          "extension@tabliss.io" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/tabliss/latest.xpi";
-            installation_mode = "force_installed";
-          };
+          #"extension@tabliss.io" = {
+          #    install_url = "https://addons.mozilla.org/firefox/downloads/latest/tabliss/latest.xpi";
+          #    installation_mode = "force_installed";
+          #  };
           # adaptive-tab-bar-colour
         # "ATBC@EasonWong" = {
         ##   install_url = "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi";

@@ -9,21 +9,18 @@
     [ 
        ./system/hardware-configuration.nix
       #/etc/nixos/hardware-configuration.nix #for bad times
-      ./system/ai.nix
       ./system/audio.nix
       ./system/coding.nix
-      ./system/extra-pkgs.nix   #off
-      ./system/gaming.nix       #off 
-      ./system/graphics.nix     #off
-      ./system/minecraft.nix    #off 
+      #./system/extra-pkgs.nix   #off
+      #./system/gaming.nix       #off 
+      #./system/graphics.nix     #off
       ./system/packages.nix
-      ./system/qemu.nix         #off 
+      #./system/qemu.nix         #off 
       ./system/sddm.nix
       #./system/singlegpupassthrough.nix
       ./system/solaar.nix
-      ./system/ssh.nix          #off
+      #./system/ssh.nix          #off
       ./system/syncthing.nix
-      ./system/users.nix
     ];
 
   # Bootloader.
@@ -31,8 +28,21 @@
   boot.loader.efi.canTouchEfiVariables = true;
   
   # Networking & Bluetooth
-  networking.hostName = "NixAYO"; # Define your hostname.
+  networking.hostName = "yoga"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  
+  # Users module, don't forget to add a password with 'passwd'!
+  users.users.igor = {
+    isNormalUser = true;
+    description = "igor";
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
+  # extra
+  #users.users.magda = {
+  #  isNormalUser = true;
+  #  description = "x";
+  #  extraGroups = [ "networkmanager" "wheel" ];
+  #};
 
   # Enable networking
   networking.networkmanager.enable = true;

@@ -15,7 +15,7 @@
   ];
   programs.gamemode.enable = true;
 
-  #protonGE
+  ##protonGE
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATH = "/home/igor/.steam/root/compatibilitytools.d/";
   }; 

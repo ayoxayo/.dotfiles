@@ -5,92 +5,89 @@
     enable = true;
     settings = {
       window = {
-        decorations = "None";
-        opacity = 0.50;
+        decorations = "Full";
+        opacity = 0.90;
         blur = true;
         startup_mode = "Maximized";
       };
+      #general.import = [ "./catppuccin-frappe.toml" ];
       colors = {
-        primary = {
-          background = "#303446";
-          foreground = "#c6d0f5";
-          dim_foreground = "#838ba7";
-          bright_foreground = "#c6d0f5";
-        };
+    primary = {
+      background = "#1e1e2e";
+      foreground = "#cdd6f4";
+      dim_foreground = "#7f849c";
+      bright_foreground = "#cdd6f4";
+    };
 
-        cursor = {
-          text = "#303446";
-          cursor = "#f2d5cf";
-        };
+    cursor = {
+      text = "#1e1e2e";
+      cursor = "#f5e0dc";
+    };
 
-        vi_mode_cursor = {
-          text = "#303446";
-          cursor = "#babbf1";
-        };
+    vi_mode_cursor = {
+      text = "#1e1e2e";
+      cursor = "#b4befe";
+    };
 
-        search = {
-          matches = {
-            foreground = "#303446";
-            background = "#a5adce";
-          };
-          focused_match = {
-            foreground = "#303446";
-            background = "#a6d189";
-          };
-        };
+    search = {
+      matches = {
+        foreground = "#1e1e2e";
+        background = "#a6adc8";
+      };
 
-        footer_bar = {
-          foreground = "#303446";
-          background = "#a5adce";
-        };
+      focused_match = {
+        foreground = "#1e1e2e";
+        background = "#a6e3a1";
+      };
+    };
 
-        hints = {
-          start = {
-            foreground = "#303446";
-            background = "#e5c890";
-          };
-          end = {
-            foreground = "#303446";
-            background = "#a5adce";
-          };
-        };
+    footer_bar = {
+      foreground = "#1e1e2e";
+      background = "#a6adc8";
+    };
 
-        selection = {
-          text = "#303446";
-          background = "#f2d5cf";
-        };
+    hints = {
+      start = {
+        foreground = "#1e1e2e";
+        background = "#f9e2af";
+      };
 
-        normal = {
-          black = "#51576d";
-          red = "#e78284";
-          green = "#a6d189";
-          yellow = "#e5c890";
-          blue = "#8caaee";
-          magenta = "#f4b8e4";
-          cyan = "#81c8be";
-          white = "#b5bfe2";
-        };
+      end = {
+        foreground = "#1e1e2e";
+        background = "#a6adc8";
+      };
+    };
 
-        bright = {
-          black = "#626880";
-          red = "#e78284";
-          green = "#a6d189";
-          yellow = "#e5c890";
-          blue = "#8caaee";
-          magenta = "#f4b8e4";
-          cyan = "#81c8be";
-          white = "#a5adce";
-        };
+    selection = {
+      text = "#1e1e2e";
+      background = "#f5e0dc";
+    };
+
+    normal = {
+      black = "#45475a";
+      red = "#f38ba8";
+      green = "#a6e3a1";
+      yellow = "#f9e2af";
+      blue = "#89b4fa";
+      magenta = "#f5c2e7";
+      cyan = "#94e2d5";
+      white = "#bac2de";
+    };
+
+    bright = {
+      black = "#585b70";
+      red = "#f38ba8";
+      green = "#a6e3a1";
+      yellow = "#f9e2af";
+      blue = "#89b4fa";
+      magenta = "#f5c2e7";
+      cyan = "#94e2d5";
+      white = "#a6adc8";
+    };
 
         indexed_colors = [
-          {
-            index = 16;
-            color = "#ef9f76";
-          }
-          {
-            index = 17;
-            color = "#f2d5cf";
-          }
+          { index = 16; color = "#fab387"; }
+          { index = 17; color = "#f5e0dc"; }
         ];
       };
     };
