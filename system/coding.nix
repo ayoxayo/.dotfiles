@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     jetbrains.idea-community
+    vscodium-fhs
     
     nixpkgs-fmt
     alejandra

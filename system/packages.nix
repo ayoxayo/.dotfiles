@@ -8,6 +8,8 @@
     gurk-rs
     ripgrep
     alacritty
+    tmux
+    tmuxPlugins.catppuccin
    
     inkscape
 
