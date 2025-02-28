@@ -18,5 +18,18 @@
   #protonGE
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATH = "/home/igor/.steam/root/compatibilitytools.d/";
-  }; 
+  };
+  # mc server port forwarding
+  networking = {
+    firewall = {
+
+      allowedTCPPorts = [ 
+        25565           
+      ];
+
+      allowedUDPPorts = [
+        25565
+      ];
+    };
+  };
 }

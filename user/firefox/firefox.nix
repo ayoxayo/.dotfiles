@@ -1,6 +1,6 @@
 # firefox module
 # default on
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.firefox = {
@@ -97,7 +97,7 @@
     # Valid strings for installation_mode are "allowed", "blocked",
     # "force_installed" and "normal_installed".
     ExtensionSettings = {
-      "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
+      "*".installation_mode = "allowed"; # blocks all addons except the ones specified below
       # uBlock Origin:
       "uBlock0@raymondhill.net" = {
       install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -108,7 +108,12 @@
         #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
         #  installation_mode = "force_installed";
         #  };
-          # Stylus
+        # Renewed Tab - New Tab
+          "{166411f2-402a-4bca-a3da-38b795ec8007}" = {
+            installation_mode = "force_installed";
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4300211/renewed_tab-1.19.0.xpi";
+          };  
+        # Stylus
           "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}" = {
           installation_mode = "force_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/file/4338993/styl_us-1.5.51.xpi";
@@ -117,6 +122,11 @@
           "FirefoxColor@mozilla.com" = {
           installation_mode = "force_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/file/3643624/firefox_color-2.1.7.xpi";
+          };
+          # MMD Scroll 
+          "juraj.masiar@gmail.com_ScrollAnywhere" = {
+          installation_mode = "force_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/file/3938344/scroll_anywhere-9.2.xpi";
           };
           # Youtube Enhancer
           "enhancerforyoutube@maximerf.addons.mozilla.org" = {

@@ -17,13 +17,17 @@
      url = "github:Svenum/Solaar-Flake/main";
      inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+    #nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+    audio = {
+      url = "github:polygon/audio.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, plasma-manager, solaar, nvf, ... }@inputs:
     let
       lib = nixpkgs.lib;
-      username = "igor";
+      #username = "igor";
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {

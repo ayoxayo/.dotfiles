@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./user/plasma/plasma.nix
@@ -17,6 +17,35 @@
   # manage.
   home.username = "igor";
   home.homeDirectory = "/home/igor";
+
+  home.packages = with pkgs; [
+      ardour
+      calf
+      carla
+      geonkick
+      helm
+      lsp-plugins
+      mixxx # DJ mixer
+      noise-repellent
+      paulstretch
+      puredata
+      qjackctl
+      sfizz # sfz sampler
+      supercollider
+      surge
+      swh_lv2
+      vmpk # virtual midi keyboard
+      x42-avldrums
+      x42-gmsynth
+      x42-plugins
+      zam-plugins # Some random plugins I'm about to try
+      zynaddsubfx # Plugin
+
+      # Remove this in favour of `puredata` above once the
+      # `fix-jack-client-name-len` patch is merged into the pure data, is
+      # published in a new version and the new version is available in nixpkgs.
+    #(callPackage /home/mindtree/programming/nix/puredata/puredata.nix {})
+    ];
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

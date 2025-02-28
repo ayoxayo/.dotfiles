@@ -11,5 +11,9 @@
     jdk
     jdk23
     jdk17
+
+    gradle
+    gradle_7
+    gradle_8
   ];
 }

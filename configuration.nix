@@ -9,13 +9,11 @@
     [ 
        ./system/hardware-configuration.nix
       #/etc/nixos/hardware-configuration.nix #for bad times
-      #./system/ai.nix
       ./system/audio.nix
       ./system/coding.nix
       ./system/extra-pkgs.nix   #off
       ./system/gaming.nix       #off 
       ./system/graphics.nix     #off
-      ./system/minecraft.nix    #off 
       ./system/packages.nix
       ./system/qemu.nix         #off 
       ./system/sddm.nix
